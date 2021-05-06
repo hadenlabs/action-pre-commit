@@ -43,10 +43,31 @@ badges:
 # Short description of this project
 description: |-
 
-  action-pre-commit for project
+  a GitHub action to run [pre-commit](https://pre-commit.com)
 
-  ### TODO: Replace name project to New Project
+  ### using this action
 
-  ```bash
-    agr 'action-pre-commit' 'new-project'
+  To use this action, make a file `.github/workflows/pre-commit.yml`.  Here's a
+  template to get started:
+
+  ```yaml
+  name: pre-commit
+
+  on:
+    pull_request:
+    push:
+      branches: [main]
+
+  jobs:
+    pre-commit:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v2
+      - id: file_changes
+        uses: trilom/file-changes-action@v1.2.4
+        with:
+          output: ' '
+      - uses: hadenlabs/action-pre-commit@v0.0.0
+        with:
+          args: run --files ${{ steps.file_changes.outputs.files}}
   ```
