@@ -1,0 +1,15 @@
+name: 'TODO: write action name'
+description: 'TODO: write description'
+author: 'hadenlabs' # TODO: write your name.
+inputs:
+  github_token:
+    description: 'GITHUB_TOKEN'
+    default: '${{ github.token }}'
+  repo:
+    description: 'target GitHub repository. e.g. hadenlabs/base-template'
+    default: '${{ github.repository }}'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
