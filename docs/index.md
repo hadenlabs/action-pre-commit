@@ -1,1 +1,1 @@
-# Welcome to action-docker-template documentation
+# Welcome to action-pre-commit documentation

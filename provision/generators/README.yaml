@@ -5,7 +5,7 @@
 #
 
 # Name of this project
-name: action-docker-template
+name: action-pre-commit
 
 email:
   support: support@hadenlabs.com
@@ -17,22 +17,22 @@ email:
 license: 'LGPL-3.0'
 
 # Canonical GitHub repo
-github_repo: hadenlabs/action-docker-template
+github_repo: hadenlabs/action-pre-commit
 
 # Badges to display
 badges:
   - name: GitHub tag (latest SemVer)
-    image: https://img.shields.io/github/v/tag/hadenlabs/action-docker-template?label=latest&sort=semver
-    url: https://github.com/hadenlabs/action-docker-template/releases
+    image: https://img.shields.io/github/v/tag/hadenlabs/action-pre-commit?label=latest&sort=semver
+    url: https://github.com/hadenlabs/action-pre-commit/releases
   - name: Latest Release
-    image: https://img.shields.io/github/release/hadenlabs/action-docker-template
-    url: https://github.com/hadenlabs/action-docker-template/releases
+    image: https://img.shields.io/github/release/hadenlabs/action-pre-commit
+    url: https://github.com/hadenlabs/action-pre-commit/releases
   - name: Lint
-    image: https://img.shields.io/github/workflow/status/hadenlabs/action-docker-template/lint-code
-    url: https://github.com/hadenlabs/action-docker-template/actions
+    image: https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/lint-code
+    url: https://github.com/hadenlabs/action-pre-commit/actions
   - name: Issues
-    image: https://img.shields.io/github/issues/hadenlabs/action-docker-template
-    url: https://github.com/hadenlabs/action-docker-template/issues
+    image: https://img.shields.io/github/issues/hadenlabs/action-pre-commit
+    url: https://github.com/hadenlabs/action-pre-commit/issues
   - name: Conventional Commits
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
@@ -43,10 +43,10 @@ badges:
 # Short description of this project
 description: |-
 
-  action-docker-template for project
+  action-pre-commit for project
 
   ### TODO: Replace name project to New Project
 
   ```bash
-    agr 'action-docer-template' 'new-project'
+    agr 'action-pre-commit' 'new-project'
   ```
