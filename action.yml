@@ -1,11 +1,14 @@
-name: 'pre-commit'
-description: 'run pre-commit-hooks validate code'
-author: 'hadenlabs'
+name: pre-commit
+description: run pre-commit and optionally commit back to the pull request
+author: hadenlabs
 inputs:
-  github_token:
-    description: 'GITHUB_TOKEN'
-    default: '${{ github.token }}'
+  extra_args:
+    description: options to pass to pre-commit run
+    required: false
+    default: 'run --all-files'
 
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://hadenlabs:action-pre-commit:latest'
+  args:
+    - ${{ inputs.args}}
