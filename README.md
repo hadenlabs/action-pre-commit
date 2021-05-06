@@ -12,29 +12,29 @@
 
   -->
 
-# action-docker-template
+# action-pre-commit
 
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/action-docker-template?label=latest&sort=semver)](https://github.com/hadenlabs/action-docker-template/releases) [![Latest Release](https://img.shields.io/github/release/hadenlabs/action-docker-template)](https://github.com/hadenlabs/action-docker-template/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/action-docker-template/lint-code)](https://github.com/hadenlabs/action-docker-template/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/action-docker-template)](https://github.com/hadenlabs/action-docker-template/issues) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/action-pre-commit?label=latest&sort=semver)](https://github.com/hadenlabs/action-pre-commit/releases) [![Latest Release](https://img.shields.io/github/release/hadenlabs/action-pre-commit)](https://github.com/hadenlabs/action-pre-commit/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/lint-code)](https://github.com/hadenlabs/action-pre-commit/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/action-pre-commit)](https://github.com/hadenlabs/action-pre-commit/issues) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
 
-action-docker-template for project
+action-pre-commit for project
 
 ### TODO: Replace name project to New Project
 
 ```bash
-  agr 'action-docer-template' 'new-project'
+  agr 'action-pre-commit' 'new-project'
 ```
 
 ## Help
 
 **Got a question?**
 
-File a GitHub [issue](https://github.com/hadenlabs/action-docker-template/issues).
+File a GitHub [issue](https://github.com/hadenlabs/action-pre-commit/issues).
 
 ## Contributing
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/hadenlabs/action-docker-template/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/hadenlabs/action-pre-commit/issues) to report any bugs or file feature requests.
 
 ### Development
 
@@ -75,6 +75,6 @@ All other trademarks referenced herein are the property of their respective owne
 
 The code and styles are licensed under the LGPL-3.0 license [See project license.](LICENSE).
 
-## Don't forget to 🌟 Star 🌟 the repo if you like action-docker-template
+## Don't forget to 🌟 Star 🌟 the repo if you like action-pre-commit
 
-[Your feedback is appreciated](https://github.com/hadenlabs/action-docker-template/issues)
+[Your feedback is appreciated](https://github.com/hadenlabs/action-pre-commit/issues)
