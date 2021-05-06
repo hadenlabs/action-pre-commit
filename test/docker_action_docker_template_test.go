@@ -18,8 +18,10 @@ func TestPreCommitHooksBuildSuccess(t *testing.T) {
 
 	docker.Build(t, "../", buildOptions)
 	opts := &docker.RunOptions{
-		Command: []string{},
+		Command: []string{
+      "-V",
+    },
 	}
 	output := docker.Run(t, tag, opts)
-	assert.Empty(t, output, output)
+	assert.NotEmpty(t, output, output)
 }
