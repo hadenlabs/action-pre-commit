@@ -1,4 +1,4 @@
-module github.com/hadenlabs/action-docker-template
+module github.com/hadenlabs/action-pre-commit
 
 go 1.16
 
