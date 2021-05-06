@@ -16,12 +16,32 @@
 
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/hadenlabs/action-pre-commit?label=latest&sort=semver)](https://github.com/hadenlabs/action-pre-commit/releases) [![Latest Release](https://img.shields.io/github/release/hadenlabs/action-pre-commit)](https://github.com/hadenlabs/action-pre-commit/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/lint-code)](https://github.com/hadenlabs/action-pre-commit/actions) [![Issues](https://img.shields.io/github/issues/hadenlabs/action-pre-commit)](https://github.com/hadenlabs/action-pre-commit/issues) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
 
-action-pre-commit for project
+a GitHub action to run [pre-commit](https://pre-commit.com)
 
-### TODO: Replace name project to New Project
+### using this action
 
-```bash
-  agr 'action-pre-commit' 'new-project'
+To use this action, make a file `.github/workflows/pre-commit.yml`. Here's a template to get started:
+
+```yaml
+name: pre-commit
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - id: file_changes
+        uses: trilom/file-changes-action@v1.2.4
+        with:
+          output: ' '
+      - uses: hadenlabs/action-pre-commit@v0.0.0
+        with:
+          args: run --files ${{ steps.file_changes.outputs.files}}
 ```
 
 ## Help
