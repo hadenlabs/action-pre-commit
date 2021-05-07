@@ -1,4 +1,4 @@
-name: pre-commit
+name: hadenlabs-action-pre-commit
 description: run pre-commit and optionally commit back to the pull request
 author: hadenlabs
 inputs:
