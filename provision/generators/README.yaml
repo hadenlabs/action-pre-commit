@@ -26,7 +26,10 @@ badges:
     url: https://github.com/hadenlabs/action-pre-commit/releases/latest
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/lint-code
-    url: https://github.com/hadenlabs/action-pre-commit/actions?workflow=test
+    url: https://github.com/hadenlabs/action-pre-commit/actions?workflow=lint-code
+  - name: CI
+    image: https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/ci
+    url: https://github.com/hadenlabs/action-pre-commit/actions?workflow=ci
   - name: Test
     image: https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/test
     url: https://github.com/hadenlabs/action-pre-commit/actions?workflow=test
