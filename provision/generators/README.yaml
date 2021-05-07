@@ -21,18 +21,15 @@ github_repo: hadenlabs/action-pre-commit
 
 # Badges to display
 badges:
-  - name: GitHub tag (latest SemVer)
-    image: https://img.shields.io/github/v/tag/hadenlabs/action-pre-commit?label=latest&sort=semver
-    url: https://github.com/hadenlabs/action-pre-commit/releases
-  - name: Latest Release
-    image: https://img.shields.io/github/release/hadenlabs/action-pre-commit
-    url: https://github.com/hadenlabs/action-pre-commit/releases
+  - name: GitHub release
+    image: https://img.shields.io/github/release/hadenlabs/action-pre-commit?style=flat-square
+    url: https://github.com/hadenlabs/action-pre-commit/releases/latest
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/lint-code
-    url: https://github.com/hadenlabs/action-pre-commit/actions
-  - name: Issues
-    image: https://img.shields.io/github/issues/hadenlabs/action-pre-commit
-    url: https://github.com/hadenlabs/action-pre-commit/issues
+    url: https://github.com/hadenlabs/action-pre-commit/actions?workflow=test
+  - name: Test
+    image: https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/test
+    url: https://github.com/hadenlabs/action-pre-commit/actions?workflow=test
   - name: Conventional Commits
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
