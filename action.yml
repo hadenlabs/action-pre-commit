@@ -9,6 +9,6 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://hadenlabs:action-pre-commit:latest'
+  image: 'docker://hadenlabs/action-pre-commit:0.1.1'
   args:
     - ${{ inputs.args}}
