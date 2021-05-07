@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. This file uses change log convention from [keep a CHANGELOG](http://keepachangelog.com/en/0.3.0/).
 
+<a name="0.1.1"></a>
+
+## [0.1.1](https://github.com/hadenlabs/action-pre-commit/compare/0.1.0...0.1.1)
+
+> 2021-05-07
+
+### Bug Fixes
+
+- execution of github actions ([#10](https://github.com/hadenlabs/action-pre-commit/issues/10))
+
 <a name="0.1.0"></a>
 
 ## 0.1.0
