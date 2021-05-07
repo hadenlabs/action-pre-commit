@@ -12,6 +12,9 @@ on:
     branches:
       - develop
 
+env:
+  IMAGE_NAME: 'hadenlabs/action-pre-commit'
+
 jobs:
   test:
     name: test
@@ -22,6 +25,9 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
+      - name: build the docker image
+        run: |
+          docker build . --tag ${{ env.IMAGE_NAME }}
       - name: Install Go
         uses: actions/setup-go@v2
         with:
