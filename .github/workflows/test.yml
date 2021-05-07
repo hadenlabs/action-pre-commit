@@ -25,6 +25,8 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
+      - name: Check out a copy of the repo
+        uses: actions/checkout@v2
       - name: build the docker image
         run: |
           docker build . --tag ${{ env.IMAGE_NAME }}
