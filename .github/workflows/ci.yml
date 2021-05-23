@@ -1,7 +1,7 @@
 name: ci
 on:
   workflow_run:
-    workflows: ['lint-code', 'test']
+    workflows: ['test']
     types:
       - completed
 
@@ -19,7 +19,7 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out a copy of the repo
+      - name: check out a copy of the repo
         uses: actions/checkout@v2
       - name: set up qemu
         uses: docker/setup-qemu-action@v1
