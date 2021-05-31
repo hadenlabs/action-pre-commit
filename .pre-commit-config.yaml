@@ -42,10 +42,12 @@ repos:
       - id: fix-encoding-pragma
       - id: sort-simple-yaml
   - repo: https://github.com/hadenlabs/pre-commit-hooks
-    rev: f6cc97fd7683611087766bb542c9a11e70db2f92
+    rev: 2bed7c6ec4930b235aaf54aff1cf34e3df694f37
     hooks:
       - id: do-not-commit
       - id: markdown-link-check
+        args:
+          - --config=.github/linters/markdown-link-config.json
         exclude: \.tpl.md$
       - id: shellcheck
         exclude: >
@@ -55,6 +57,7 @@ repos:
           )$
         args:
           - --exclude=SC1072,SC1073,SC2068
+      - id: validate-toml
       - id: todocheck
       - id: gitleaks
         args:
