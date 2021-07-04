@@ -21,9 +21,9 @@ github_repo: hadenlabs/action-pre-commit
 
 # Badges to display
 badges:
-  - name: GitHub release
-    image: https://img.shields.io/github/release/hadenlabs/action-pre-commit?style=flat-square
-    url: https://github.com/hadenlabs/action-pre-commit/releases/latest
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/action-pre-commit
+    url: https://github.com/hadenlabs/action-pre-commit/releases
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/lint-code
     url: https://github.com/hadenlabs/action-pre-commit/actions?workflow=lint-code
@@ -67,7 +67,7 @@ description: |-
         uses: trilom/file-changes-action@v1.2.4
         with:
           output: ' '
-      - uses: hadenlabs/action-pre-commit@v0.1.2
+      - uses: hadenlabs/action-pre-commit@0.1.2
         with:
           args: run --files ${{ steps.file_changes.outputs.files}}
   ```
