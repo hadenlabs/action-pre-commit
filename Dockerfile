@@ -1,4 +1,4 @@
-FROM hadenlabs/pre-commit-hooks:latest
+FROM hadenlabs/pre-commit-hooks:0.2.0
 
 ENV PATH $PATH:/root/.local/bin
 
