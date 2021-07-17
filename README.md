@@ -43,7 +43,7 @@ jobs:
       uses: trilom/file-changes-action@v1.2.4
       with:
         output: ' '
-    - uses: hadenlabs/action-pre-commit@0.1.2
+    - uses: hadenlabs/action-pre-commit@0.1.3
       with:
         args: run --files ${{ steps.file_changes.outputs.files}}
 ``` 
