@@ -1,8 +1,12 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 if [ -n "${GITHUB_WORKSPACE}" ]; then
   cd "${GITHUB_WORKSPACE}" || exit
 fi
 
-pre-commit "${@}"
+echo "==> Running pre-commit"
+
+pre-commit install
+
+exec pre-commit "${@}"
