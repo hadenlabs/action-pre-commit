@@ -1,5 +1,6 @@
-#!/bin/bash
-set -e
+#!/bin/sh
+
+set -eu
 
 if [ -n "${GITHUB_WORKSPACE}" ]; then
   cd "${GITHUB_WORKSPACE}" || exit
