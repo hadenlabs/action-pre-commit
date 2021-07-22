@@ -2,8 +2,8 @@
 
 set -eu
 
-if [ -n "${GITHUB_WORKSPACE}" ]; then
-  cd "${GITHUB_WORKSPACE}" || exit
+if [ -z "${GITHUB_WORKSPACE}" ]; then
+    export GITHUB_WORKSPACE="${PWD}"
 fi
 
 echo "==> Running pre-commit"
