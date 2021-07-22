@@ -1,6 +1,4 @@
-#!/bin/sh
-
-set -eu
+#!/bin/bash
 
 if [ -z "${GITHUB_WORKSPACE}" ]; then
     export GITHUB_WORKSPACE="${PWD}"
