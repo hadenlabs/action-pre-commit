@@ -67,7 +67,7 @@ description: |-
         uses: trilom/file-changes-action@v1.2.4
         with:
           output: ' '
-      - uses: hadenlabs/action-pre-commit@0.1.4
+      - uses: hadenlabs/action-pre-commit@0.1.5
         with:
           args: run --files ${{ steps.file_changes.outputs.files}}
   ```

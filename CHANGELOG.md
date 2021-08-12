@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file. This file uses change log convention from [keep a CHANGELOG](http://keepachangelog.com/en/0.3.0/).
 
 
+<a name="0.1.5"></a>
+## [0.1.5](https://github.com/hadenlabs/action-pre-commit/compare/0.1.4...0.1.5)
+
+> 2021-08-11
+
+### Bug Fixes
+
+* implement load go path ([#21](https://github.com/hadenlabs/action-pre-commit/issues/21))
+
+### Features
+
+* delete unnecessary hooks git ([#21](https://github.com/hadenlabs/action-pre-commit/issues/21))
+
+
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/hadenlabs/action-pre-commit/compare/0.1.3...0.1.4)
+
+> 2021-08-07
+
+### Bug Fixes
+
+* implement email hello hadenlabs ([#19](https://github.com/hadenlabs/action-pre-commit/issues/19))
+* only run when is tag valid ([#19](https://github.com/hadenlabs/action-pre-commit/issues/19))
+* delete error code bash ([#19](https://github.com/hadenlabs/action-pre-commit/issues/19))
+* generate path github workspace ([#19](https://github.com/hadenlabs/action-pre-commit/issues/19))
+* not found command pre-commit ([#19](https://github.com/hadenlabs/action-pre-commit/issues/19))
+* links missing pull requests (0.1.3)
+* commands version pre-commit-hooks (0.1.3)
+* version pre-commit-hooks (0.1.3)
+
+### Code Refactoring
+
+* work flows github  ([#19](https://github.com/hadenlabs/action-pre-commit/issues/19))
+* execution pre-commit run dockerfile ([#19](https://github.com/hadenlabs/action-pre-commit/issues/19))
+* generator workflow github action (0.1.3)
+
+### Features
+
+* implement labels for docker build ([#19](https://github.com/hadenlabs/action-pre-commit/issues/19))
+* implement hotfix semantic ([#19](https://github.com/hadenlabs/action-pre-commit/issues/19))
+* implement hook type commit-msg ([#17](https://github.com/hadenlabs/action-pre-commit/issues/17))
+* sync generator readme ([#17](https://github.com/hadenlabs/action-pre-commit/issues/17))
+
+### Features
+
+* clean node and yarn ([#17](https://github.com/hadenlabs/action-pre-commit/issues/17))
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/hadenlabs/action-pre-commit/compare/0.1.2...0.1.3)
 
