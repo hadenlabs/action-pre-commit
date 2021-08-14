@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file. This file uses change log convention from [keep a CHANGELOG](http://keepachangelog.com/en/0.3.0/).
 
 
+<a name="0.1.7"></a>
+## [0.1.7](https://github.com/hadenlabs/action-pre-commit/compare/0.1.6...0.1.7)
+
+> 2021-08-14
+
+### Bug Fixes
+
+* event execute tags github actions ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+* badge delivery continuous for readme ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+
+### Features
+
+* implement composite for action github ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+* implement tags validate github ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+
+
 <a name="0.1.6"></a>
 ## [0.1.6](https://github.com/hadenlabs/action-pre-commit/compare/0.1.5...0.1.6)
 
