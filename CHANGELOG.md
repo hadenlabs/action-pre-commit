@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file. This file uses change log convention from [keep a CHANGELOG](http://keepachangelog.com/en/0.3.0/).
 
 
+<a name="0.1.6"></a>
+## [0.1.6](https://github.com/hadenlabs/action-pre-commit/compare/0.1.5...0.1.6)
+
+> 2021-08-14
+
+### Features
+
+* implement change value bump version action ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+* disable go lint ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+
+### Features
+
+* implement run docker pre-commit ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+* implement install pre-commit now ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+* implement message donate ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+
+
 <a name="0.1.5"></a>
 ## [0.1.5](https://github.com/hadenlabs/action-pre-commit/compare/0.1.4...0.1.5)
 
