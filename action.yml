@@ -9,7 +9,7 @@ inputs:
 
 env:
   IMAGE_NAME: 'hadenlabs/action-pre-commit'
-  IMAGE_VERSION: '0.1.6'
+  IMAGE_VERSION: '0.1.7'
 
 runs:
   using: "composite"
