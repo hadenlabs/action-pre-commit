@@ -2,16 +2,27 @@ name: hadenlabs-action-pre-commit
 description: run pre-commit and optionally commit back to the pull request
 author: hadenlabs
 inputs:
-  extra_args:
+  args:
     description: options to pass to pre-commit run
     required: false
     default: 'run --all-files'
 
+env:
+  IMAGE_NAME: 'hadenlabs/action-pre-commit'
+  IMAGE_VERSION: '0.1.6'
+
 runs:
-  using: "docker"
-  image: "docker://hadenlabs/action-pre-commit:0.1.6"
-  args:
-    - ${{ inputs.extra_args }}
+  using: "composite"
+  steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: Checkout
+      if: ${{ !env.ACT }}
+      uses: actions/checkout@v2
+
+    - name: validate files
+      run: |
+        docker run --rm -w ${{ env.GITHUB_WORKSPACE }} -v $(pwd):${{ env.GITHUB_WORKSPACE }} ${{ env.IMAGE_NAME }}:${{ env.IMAGE_NAME }} ${{ inputs.args }}
+
 
 branding:
   icon: 'check-circle'
