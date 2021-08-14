@@ -39,4 +39,4 @@ jobs:
 
       - name: validate files
         run: |
-          docker run --rm --volume $PWD:/data ${{ env.IMAGE_NAME }}:latest run --all-files
+          docker run --rm -w /github/workspace -v $(pwd):/github/workspace ${{ env.IMAGE_NAME }}:latest
