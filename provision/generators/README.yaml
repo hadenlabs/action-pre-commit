@@ -27,12 +27,12 @@ badges:
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/lint-code
     url: https://github.com/hadenlabs/action-pre-commit/actions?workflow=lint-code
-  - name: CI
-    image: https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/ci
-    url: https://github.com/hadenlabs/action-pre-commit/actions?workflow=ci
   - name: Test
     image: https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/test
     url: https://github.com/hadenlabs/action-pre-commit/actions?workflow=test
+  - name: CD
+    image: https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/cd
+    url: https://github.com/hadenlabs/action-pre-commit/actions?workflow=cd
   - name: Conventional Commits
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
@@ -63,11 +63,7 @@ description: |-
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@v2
-      - id: file_changes
-        uses: trilom/file-changes-action@v1.2.4
-        with:
-          output: ' '
       - uses: hadenlabs/action-pre-commit@0.1.6
         with:
-          args: run --files ${{ steps.file_changes.outputs.files}}
+          args: run --files
   ```
