@@ -14,12 +14,9 @@ env:
 runs:
   using: "composite"
   steps:
-    - name: Set up QEMU
-      shell: sh
-      uses: docker/setup-qemu-action@v1
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: validate files
-      shell: sh
+      shell: bash
       run: |
         docker run --rm -w ${{ env.GITHUB_WORKSPACE }} -v $(pwd):${{ env.GITHUB_WORKSPACE }} ${{ env.IMAGE_NAME }}:${{ env.IMAGE_NAME }} ${{ inputs.args }}
 
