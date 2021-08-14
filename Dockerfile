@@ -9,9 +9,14 @@ LABEL maintainer="Team Hadenlabs <hello@hadenlabs.com>" \
 
 WORKDIR /github/workspace
 
+ENV MODULES_PYTHON \
+    pre-commit
+
 ENV PATH $PATH:/go/bin:/usr/local/go/bin:/root/.local/bin:/usr/bin:/usr/local/bin
 
 COPY provision/script/entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+
+RUN python -m pip install --user --no-cache-dir $MODULES_PYTHON \
+    && chmod 755 /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
