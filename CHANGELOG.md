@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. This file uses change log convention from [keep a CHANGELOG](http://keepachangelog.com/en/0.3.0/).
 
 
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/hadenlabs/action-pre-commit/compare/0.1.7...0.1.8)
+
+> 2021-08-14
+
+### Bug Fixes
+
+* run pre-commit with docker ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+* clean uses for action ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+* validate docker action ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+
+
 <a name="0.1.7"></a>
 ## [0.1.7](https://github.com/hadenlabs/action-pre-commit/compare/0.1.6...0.1.7)
 

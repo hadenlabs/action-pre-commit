@@ -1,6 +1,6 @@
 FROM hadenlabs/pre-commit-hooks:0.3.0
 
-ARG VERSION=0.1.7
+ARG VERSION=0.1.8
 
 LABEL maintainer="Team Hadenlabs <hello@hadenlabs.com>" \
       org.label-schema.vcs-url="https://github.com/hadenlabs/action-pre-commit" \
