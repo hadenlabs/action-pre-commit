@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file. This file u
 
 ### Bug Fixes
 
+* setup run docker lint code ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
 * run pre-commit with docker ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
 * clean uses for action ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
 * validate docker action ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
