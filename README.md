@@ -39,7 +39,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: hadenlabs/action-pre-commit@0.1.7
+    - uses: hadenlabs/action-pre-commit@0.1.8
       with:
         args: run --files
 ``` 
