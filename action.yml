@@ -14,7 +14,7 @@ runs:
     - name: validate files
       shell: bash
       run: |
-        docker run --rm --workdir /github/workspace -v "$GITHUB_WORKSPACE":"/github/workspace" hadenlabs/action-pre-commit:0.1.8 ${{ inputs.args }}
+        docker run --rm --workdir /github/workspace -v "$GITHUB_WORKSPACE":"/github/workspace" hadenlabs/action-pre-commit:0.2.0 ${{ inputs.args }}
 
 branding:
   icon: 'check-circle'
