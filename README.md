@@ -14,7 +14,10 @@
 
  
 
- [![Latest Release](https://img.shields.io/github/release/hadenlabs/action-pre-commit)](https://github.com/hadenlabs/action-pre-commit/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/lint-code)](https://github.com/hadenlabs/action-pre-commit/actions?workflow=lint-code) [![Test](https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/test)](https://github.com/hadenlabs/action-pre-commit/actions?workflow=test) [![CD](https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/cd)](https://github.com/hadenlabs/action-pre-commit/actions?workflow=cd) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
+
+
+
+ [![Latest Release](https://img.shields.io/github/release/hadenlabs/action-pre-commit)](https://github.com/hadenlabs/action-pre-commit/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/lint-code)](https://github.com/hadenlabs/action-pre-commit/actions?workflow=lint-code) [![Test](https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/test)](https://github.com/hadenlabs/action-pre-commit/actions?workflow=test) [![CD](https://img.shields.io/github/workflow/status/hadenlabs/action-pre-commit/cd)](https://github.com/hadenlabs/action-pre-commit/actions?workflow=cd) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735)](https://keepachangelog.com)
 
 # action-pre-commit
 
@@ -39,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: hadenlabs/action-pre-commit@0.1.8
+    - uses: hadenlabs/action-pre-commit@0.2.0
       with:
         args: run --files
 ``` 

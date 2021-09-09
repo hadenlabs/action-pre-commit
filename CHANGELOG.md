@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file. This file uses change log convention from [keep a CHANGELOG](http://keepachangelog.com/en/0.3.0/).
 
 
+<a name="0.2.0"></a>
+## [0.2.0](https://github.com/hadenlabs/action-pre-commit/compare/0.1.8...0.2.0)
+
+> 2021-09-09
+
+### Bug Fixes
+
+* setup run docker lint code ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+* run pre-commit with docker ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+* clean uses for action ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+* validate docker action ([#23](https://github.com/hadenlabs/action-pre-commit/issues/23))
+
+### Code Refactoring
+
+* workflow standard test and lint code ([#27](https://github.com/hadenlabs/action-pre-commit/issues/27))
+* generator readme and template ([#14](https://github.com/hadenlabs/action-pre-commit/issues/14))
+
+### Features
+
+* implement version python 3.9.2 ([#27](https://github.com/hadenlabs/action-pre-commit/issues/27))
+* implement actions git flow ([#27](https://github.com/hadenlabs/action-pre-commit/issues/27))
+* implement docker buildx for platforms ([#27](https://github.com/hadenlabs/action-pre-commit/issues/27))
+* implement validation links with markdown ([#14](https://github.com/hadenlabs/action-pre-commit/issues/14))
+
+### Features
+
+* implement version 0.4.0 ([#27](https://github.com/hadenlabs/action-pre-commit/issues/27))
+* implement configuration hadolint ([#27](https://github.com/hadenlabs/action-pre-commit/issues/27))
+
+
 <a name="0.1.8"></a>
 ## [0.1.8](https://github.com/hadenlabs/action-pre-commit/compare/0.1.7...0.1.8)
 
