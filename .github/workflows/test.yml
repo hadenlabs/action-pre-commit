@@ -1,6 +1,12 @@
 name: test
 
 on:
+  workflow_run:
+    workflows:
+      - lint-code
+    types:
+      - completed
+
   schedule:
     - cron: '0 0 * * *' # every day at midnight
 
