@@ -1,4 +1,4 @@
-FROM hadenlabs/pre-commit-hooks:0.3.0
+FROM hadenlabs/pre-commit-hooks:0.4.0
 
 ARG VERSION=0.1.8
 
