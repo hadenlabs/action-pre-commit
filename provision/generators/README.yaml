@@ -48,7 +48,17 @@ description: |-
 
   a GitHub action to run [pre-commit](https://pre-commit.com)
 
-  ### using this action
+requirements: |-
+
+  This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+
+  - [docker](https://www.docker.com)
+  - [python](https://www.python.org)
+  - [taskfile](https://github.com/go-task/task)
+
+
+# How to use this project
+usage: |-
 
   To use this action, make a file `.github/workflows/pre-commit.yml`.  Here's a
   template to get started:
