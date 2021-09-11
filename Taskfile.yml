@@ -6,6 +6,7 @@ includes:
   docs: ./provision/task/docs.yml
   gitflow: ./provision/task/gitflow.yml
   version: ./provision/task/version.yml
+  docker: ./provision/task/docker.yml
   go: ./provision/task/go.yml
   changelog: ./provision/task/changelog.yml
 
@@ -14,7 +15,7 @@ env:
     sh: docker -v
   PYTHON:
     sh: python --version
-  LAST_GIT_TAG:
+  APP_TAG:
     sh: git describe --tags $(git rev-list --tags --max-count=1) || echo "0.0.0"
 
 dotenv:
@@ -23,11 +24,9 @@ dotenv:
 vars:
   PROJECT_NAME: action-pre-commit
   DOCKER_ORGANIZATION: hadenlabs
+  DOCKER_PLATFORMS: linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64/v8
+  IMAGE_NAME: action-pre-commit
   REVIEWERS: luismayta
-  TEAM: hadenlabs
-  REPOSITORY_DOMAIN: github.com
-  REPOSITORY_OWNER: hadenlabs
-  PROJECT: dockerfiles
   PYTHON_VERSION: 3.9.2
   GIT_IGNORES: python,node,go,zsh
   GOLANGCI_VERSION: 1.42.0
@@ -64,6 +63,7 @@ tasks:
       - git:check
       - gitflow:check
       - docs:check
+      - docker:check
 
   readme:
     run: once
