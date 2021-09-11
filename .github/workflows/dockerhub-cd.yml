@@ -27,6 +27,9 @@ jobs:
       - name: check out a copy of the repo
         uses: actions/checkout@v2
 
+      - name: Install Task
+        uses: arduino/setup-task@v1
+
       - id: get_version
         uses: battila7/get-version-action@v2
 
